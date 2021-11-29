@@ -25,8 +25,6 @@ void parse_input(Game *game, int x, int y) {
     int target_y = y/(HEIGHT/Y_MAX_CELLS);
 
     game->board[target_x][target_y] = game->turn;
-
-    printf("%d to %d,%d", game->turn, target_x, target_y);
 }
 void draw_cross(SDL_Renderer *renderer, int x, int y) {
     SDL_SetRenderDrawColor(renderer, RED, MAX_ALPHA);

@@ -18,9 +18,16 @@
 #define BLACK 0, 0, 0
 #define MAX_ALPHA 255
 
+typedef struct {
+    int board[X_MAX_CELLS][Y_MAX_CELLS];
+    int turn;
+} Game;
 // Function definitions
 int isempty(int cells[X_MAX_CELLS][Y_MAX_CELLS], int x, int y);
+int toggle_turn(int turn);
 void draw_grid(SDL_Renderer *renderer);
 void draw_moves(SDL_Renderer *renderer, int cells[X_MAX_CELLS][Y_MAX_CELLS]);
 void draw_cross(SDL_Renderer *renderer, int x, int y);
+void draw_circle(SDL_Renderer *renderer, int x, int y);
+void parse_input(Game *game, int x, int y);
 #endif

@@ -5,3 +5,12 @@ Simple program I wrote to learn SDL2 and expand my C knowledge
 _The drawing of the shapes is not beautiful at all and kinda messy._
 
 Used external header: [`circle.h`](https://gist.github.com/Gumichan01/332c26f6197a432db91cc4327fcabb1c) to draw circles as SDL2 does not support it by default.
+
+### Building:
+```
+$ ./build.sh
+```
+### Running:
+```
+$ ./ttt
+```
